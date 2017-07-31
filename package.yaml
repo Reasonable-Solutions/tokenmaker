@@ -1,0 +1,25 @@
+name: token-maker
+version: '0.1.0.0'
+category: Web
+author: Author name here
+maintainer: example@example.com
+copyright: 2017 Author name here
+license: BSD3
+homepage: https://github.com/githubuser/token-maker#readme
+default-extensions:
+  - OverloadedStrings
+ghc-options:
+ - -Wall
+ - -Wincomplete-record-updates
+ - -Wmissing-imports-lists
+ - -Wincomplete-uni-patterns
+extra-source-files:
+- README.md
+dependencies:
+- base >=4.7 && < 5
+- jwt
+- text
+executables:
+  token-maker:
+    main: Main.hs
+    source-dirs: src
