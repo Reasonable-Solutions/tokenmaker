@@ -11,7 +11,7 @@ default-extensions:
 ghc-options:
  - -Wall
  - -Wincomplete-record-updates
- - -Wmissing-imports-lists
+ - -Wmissing-import-lists
  - -Wincomplete-uni-patterns
 extra-source-files:
 - README.md
@@ -19,6 +19,8 @@ dependencies:
 - base >=4.7 && < 5
 - jwt
 - text
+- optparse-generic
+- containers
 executables:
   token-maker:
     main: Main.hs
